@@ -31,3 +31,13 @@ VALUES
 
 SELECT * FROM Clientes; 
 SELECT * FROM Compras; 
+
+=======================================================================
+
+SELECT 
+    Clientes.nomeCliente AS NomeCliente,
+    Compras.NomeLivro AS NomeLivro
+FROM Compras
+INNER JOIN Clientes
+    ON Compras.ClienteID = Clientes.ID;
+
